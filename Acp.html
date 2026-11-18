@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Counter</title>
+
+    <style>
+
+        body {
+            text-align: center;
+            display: flex;
+            justify-content: center;
+        }
+
+        #css {
+         width: 200px;
+         padding: 20px;
+         border: 5px solid black;
+         box-sizing: border-box;
+        }   
+    </style>
+</head>
+<body>
+    <div id="css">
+     <h3> Counter </h3>
+     <p id="count">0</p>
+
+     <button onclick="Decrease()">Decrease</button>
+     <button onclick="Reset()">Reset</button>
+     <button onclick="Increase()">Increase</button>
+    </div>
+
+    <script>
+
+        var Counter = 0;
+
+        function Decrease() {
+            Counter--;
+            document.getElementById("count").innerHTML = Counter;
+        }
+
+        function Reset() {
+            Counter = 0;
+            document.getElementById("count").innerHTML = Counter;
+        }
+
+        function Increase() {
+            Counter++;
+            document.getElementById("count").innerHTML = Counter;
+        }
+    </script>
+</body>
+</html>
